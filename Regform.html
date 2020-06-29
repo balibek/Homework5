@@ -1,0 +1,176 @@
+<html>
+    <head>
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>My page</title>
+
+        <link rel="stylesheet" href="styleh6.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <form method="get" action="https://www.w3schools.com/action_page.php" target="_blank">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="index.html" class="btn btn-link">>Назад</a>
+                        <h1 class="header">Регистрационная форма</h1>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                  <div class="form-group col-12 col-md-4">
+                    <label for="cityout">Город отправления</label>
+                    <select class="form-control" name="cityout" id="cityout">
+                      <option selected>Укажите город</option>
+                      <option value="1">Нур-Султан</option>
+                      <option value="2">Алматы</option>
+                      <option value="3">Нью-Йорк</option>
+                      <option value="4">Вашингтон</option>
+                      <option value="5">Лондон</option>
+                      <option value="6">Чикаго</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-12 col-md-4">
+                    <label for="cityin">Город прибытия</label>
+                    <select class="form-control" name="cityin" id="cityoin">
+                      <option selected>Укажите город</option>
+                      <option value="1">Нур-Султан</option>
+                      <option value="2">Алматы</option>
+                      <option value="3">Нью-Йорк</option>
+                      <option value="4">Вашингтон</option>
+                      <option value="5">Лондон</option>
+                      <option value="6">Чикаго</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-12 col-md-4">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                  </div>
+
+                  <div class="form-group col-12 col-md-4">
+                    <label for="sname">Фамилия</label>
+                    <input type="text" class="form-control" name="sname" id="sname">
+                  </div>
+                  <div class="form-group col-12 col-md-4">
+                    <label for="fname">Имя</label>
+                    <input type="text" class="form-control" name="fname" id="fname">
+                  </div>
+                  <div class="form-group col-12 col-md-4">
+                    <label for="lname">Отчество</label>
+                    <input type="text" class="form-control" name="lname" id="lname">
+                  </div>
+                  
+                  
+                  <div class="form-group col-12 col-md-4">
+                    <label for="dateout">Дата отправления</label>
+                    <input type="date" class="form-control" id="dateout" name="dateout" placeholder="дд.мм.гггг">
+                  </div>
+
+                  <div class="form-group col-12 col-md-4">
+                    <label for="datein">Дата прибытия</label>
+                    <input type="date" class="form-control" id="datein" name="datein" placeholder="дд.мм.гггг">
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                   <div class="form-group col-12">
+                     <label for="comment">Цель поездки</label>
+                     <textarea class="form-control" rows="3" id="comment" name="comment"></textarea>
+                   </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-3">
+                        <h6>Выбор класса</h6>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="class" id="eclass" value="option1" checked>
+                            <label class="form-check-label" for="eclass">Эконом класс</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="class" id="bclass" value="option2">
+                            <label class="form-check-label" for="bclass">Бизнес класс</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="class" id="lclass" value="option3" disabled>
+                            <label class="form-check-label" for="lclass">Премиум класс</label>
+                          </div>
+                    </div>
+
+                    <div class="form-group col-12 col-md-3">
+                        <h6>Дополнительно</h6>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="lug" name="dop" id="lug">
+                            <label class="form-check-label" for="lug">Багаж</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="child" name="dop" id="child">
+                            <label class="form-check-label" for="child">Грудные дети </label>
+                          </div>
+                     </div>
+                   </div>
+
+                   <div class="row">
+                       <div class="col-12 center">
+                        <button type="submit" class="btn btn-primary mr-2">Отправить</button>
+                        <button type="reset" class="btn btn-secondary">Очистить</button>
+                       </div>
+                   </div>
+
+                    <div class="row pt-5">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Дополнительные услуги</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Правила безопасности</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Правила перевозки растений</a>
+                                </li>
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <p>На нашем борту вам будут предложены:</p>
+                                  <ul>
+                                    <li>Салаты</li>
+                                    <li>Горячее</li>
+                                    <li>Напитки</li>
+                                    <li>Чай, кофе</li>
+                                  </ul>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p>На нашем борту запрещено распитие спиртных напитков</p>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p>На нашем борту запрещена перевозка редких цветов:</p>
+                                    <img src="1327085636-636.jpg" alt="" width="200px">
+                                    <img src="1327086269-636.jpg" alt="" width="200px">
+                                    <img src="1327086546-636.jpg" alt="" width="200px">
+                                    <img src="1327086933-636.jpg" alt="" width="200px">
+                                    
+                                </div>
+                              </div>
+
+                          </div>
+                        </div>
+                    </div>
+                   
+                </form>
+
+            </div>
+
+
+    </body>
+</html>
